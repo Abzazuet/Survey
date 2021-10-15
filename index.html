@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Survey</title>
+    <link rel="stylesheet" href="Normalize.css" />
+    <!--Normalize.css-->
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <header class="contenedor">
+    <h1 id="title">Survey for Abel webpage</h1>
+    <p id="description">Thank you for taking the time</p>
+  </header>
+  <body>
+    <form id="survey-form">
+      <div class="contenedor">
+        <label id="name-label" for="name" class="opciones"
+          >Name
+          <input
+            class="campos"
+            id="name"
+            type="text"
+            placeholder="Enter your name"
+            name="name"
+            required
+          />
+        </label>
+      </div>
+      <div class="contenedor">
+        <label id="email-label" for="email" class="opciones"
+          >Email
+          <input
+            class="campos"
+            id="email"
+            type="email"
+            placeholder="Enter your mail"
+            name="email"
+            required
+          />
+        </label>
+      </div>
+      <div class="contenedor">
+        <label id="number-label" for="number" class="opciones"
+          >Age
+          <input
+            class="campos"
+            id="number"
+            type="number"
+            placeholder="Enter your age"
+            name="age"
+            min="10"
+            max="99"
+          />
+        </label>
+      </div>
+      <div class="contenedor">
+        <p class="opciones">Which option describes better your job?</p>
+        <select id="dropdown" name="role" class="radio">
+          <option disabled=" " selected="" value="">Select current role</option>
+          <option class="contenedor" value="full">Full time</option>
+          <option class="contenedor" value="part">Part time</option>
+          <option class="contenedor" value="call">On call</option>
+        </select>
+      </div>
+      <div class="contenedor">
+        <p class="opciones">Would you recommend our course?</p>
+        <label class="radio">
+          <input
+            type="radio"
+            name="user-recommend"
+            value="definitely"
+            checked=""
+          />
+          Definitely
+        </label>
+        <label class="radio">
+          <input type="radio" name="user-recommend" value="maybe" checked="" />
+          Maybe
+        </label>
+        <label class="radio">
+          <input type="radio" name="user-recommend" value="no" checked="" />
+          No
+        </label>
+      </div>
+      <div class="contenedor">
+        <p class="opciones">What do you like better about our page?</p>
+        <select id="most-like" name="mostLike" class="radio">
+          <div>
+            <option class="contenedor" disabled=" " selected="" value="">
+              Select an option
+            </option>
+            <option class="contenedor" value="challenges">Challenges</option>
+            <option class="contenedor" value="projects">Projects</option>
+            <option class="contenedor" value="evaluation">Evaluation</option>
+          </div>
+        </select>
+      </div>
+      <div class="contenedor">
+        <p class="opciones">What would you improve?</p>
+        <label class="radio">
+          <input id="images" type="checkbox" name="improve" value="images" />
+          Images
+        </label>
+        <label class="radio">
+          <input id="styles" type="checkbox" name="improve" value="styles" />
+          Styles
+        </label>
+        <label class="radio">
+          <input id="colors" type="checkbox" name="improve" value="colors" />
+          Colors
+        </label>
+      </div>
+      <div class="contenedor">
+        <p class="opciones">Any suggestions:</p>
+        <textarea
+          id="comments"
+          name="comment"
+          placeholder="Enter suggestions"
+          class="radio"
+        >
+        </textarea>
+      </div>
+      <button class="btn" id="submit" type="submit">Submit</button>
+    </form>
+  </body>
+  <footer>
+      
+  </footer>
+</html>
